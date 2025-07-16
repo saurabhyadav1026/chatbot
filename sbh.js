@@ -22,9 +22,10 @@ window.onload=function(){
     history_list_bar.innerHTML='';                  // onlode the history list bar is empty
 
    get_all_chats();
-   
+
     new_chat();
 
+    document.getElementById('cammand_input').addEventListener('keydown',function(e){if(!e.shiftKey && e.key=='Enter'){send()}});
 }
 
 
